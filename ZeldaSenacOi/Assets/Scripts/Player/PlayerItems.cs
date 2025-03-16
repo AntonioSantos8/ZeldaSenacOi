@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class PlayerItems : MonoBehaviour
 {
-    public GameObject[] itens;
     public GameObject actualItem;
+    public GameObject actualItemIMG;
     int currentInt;
     // Start is called before the first frame update
     void Start()
     {
-        
+        actualItem = Items.itens[0];
+        currentInt = 0;
+        actualItemIMG = Items.itensIMG[0];
     }
 
     // Update is called once per frame
@@ -20,16 +22,28 @@ public class PlayerItems : MonoBehaviour
         {
             ChangeItem();
         }
+        if(actualItem != null)
         actualItem.transform.position = gameObject.transform.position + new Vector3(2, 0, 0);
+
+
     }
     void ChangeItem()
     {
-        actualItem = itens[currentInt];
+        if(actualItem && actualItemIMG != null)
+        {
+            actualItem.SetActive(false);
+            actualItemIMG.SetActive(false);
+        }
         currentInt++;
-        if(currentInt >= itens.Length)
+        if(currentInt >= Items.itens.Count)
         {
             currentInt = 0;
         }
-        
+
+        actualItem = Items.itens[currentInt];
+        actualItemIMG = Items.itensIMG[currentInt];
+        actualItem.SetActive(true);
+        actualItemIMG.SetActive(true);
     }
 }
+
