@@ -25,6 +25,7 @@ public class SwordAttack : MonoBehaviour
         if (collision.CompareTag("Enemy"))
         {
             canAttack = true;
+            enemyStatus = collision.GetComponent<EnemyStatus>();
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -32,11 +33,11 @@ public class SwordAttack : MonoBehaviour
         if (collision.CompareTag("Enemy"))
         {
             canAttack = !canAttack;
+            enemyStatus = null;
         }
     }
     void Attack()
     {
-        enemyStatus = FindObjectOfType<EnemyStatus>();
         enemyStatus.TakeDamage(10);
     }
 }
