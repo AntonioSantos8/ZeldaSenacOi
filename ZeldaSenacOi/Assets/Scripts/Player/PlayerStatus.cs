@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerStatus : MonoBehaviour
 {
     public int life;
+    public float moveSpeed;
     // Start is called before the first frame update
     void Start()
     {
