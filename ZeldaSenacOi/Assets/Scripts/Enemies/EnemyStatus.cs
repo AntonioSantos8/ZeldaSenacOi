@@ -5,6 +5,8 @@ using UnityEngine;
 public class EnemyStatus : MonoBehaviour
 {
     public int life;
+    public float smooth;
+    public float speed;
     // Start is called before the first frame update
     void Start()
     {

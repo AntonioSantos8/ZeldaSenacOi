@@ -4,40 +4,45 @@ using UnityEngine;
 
 public class SwordAttack : MonoBehaviour
 {
-    bool canAttack;
-    EnemyStatus enemyStatus;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    List<EnemyStatus> enemiesInRange = new List<EnemyStatus>();
 
-    // Update is called once per frame
     void Update()
     {
-        if (canAttack && Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && enemiesInRange.Count > 0)
         {
             Attack();
         }
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy"))
         {
-            canAttack = true;
-            enemyStatus = collision.GetComponent<EnemyStatus>();
+            EnemyStatus enemy = collision.GetComponent<EnemyStatus>();
+            if (enemy != null && !enemiesInRange.Contains(enemy))
+            {
+                enemiesInRange.Add(enemy);
+            }
         }
     }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy"))
         {
-            canAttack = !canAttack;
-            enemyStatus = null;
+            EnemyStatus enemy = collision.GetComponent<EnemyStatus>();
+            if (enemy != null)
+            {
+                enemiesInRange.Remove(enemy);
+            }
         }
     }
+
     void Attack()
     {
-        enemyStatus.TakeDamage(10);
+        foreach (EnemyStatus enemy in enemiesInRange)
+        {
+            enemy.TakeDamage(10);
+        }
     }
 }
