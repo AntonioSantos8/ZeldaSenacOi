@@ -2,42 +2,45 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAttack : EnemyStatus
+public class EnemyAttack : MonoBehaviour
 {
     PlayerStatus statusPlayer;
     bool canAttack;
-    // Start is called before the first frame update
+    Coroutine attackRoutine;
+    public int damage;
+    public int attackCooldown = 2;
     void Start()
     {
-        canAttack = false;
+        canAttack = true;
         statusPlayer = FindObjectOfType<PlayerStatus>();
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!canAttack && collision.CompareTag("Player"))
+        if (canAttack && collision.CompareTag("Player"))
+        {
+            canAttack = true;
+            attackRoutine = StartCoroutine(Attack());
             StartCoroutine(Attack());
+        }
     }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (canAttack && collision.CompareTag("Player"))
-            StopCoroutine(Attack());
+        if (collision.CompareTag("Player"))
+        {
+            StopCoroutine(attackRoutine);
+            attackRoutine = null;
+            canAttack = false;
+        }
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
     IEnumerator Attack()
     {
-
-        while(attackCooldown > 0)
+        while (canAttack)
         {
-
             statusPlayer.life -= damage;
-            attackCooldown--;
             yield return new WaitForSeconds(2);
-            attackCooldown = 2;
         }
-
     }
 }
