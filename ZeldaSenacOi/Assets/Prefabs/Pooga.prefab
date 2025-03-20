@@ -148,8 +148,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  smooth: 2
-  speed: 4
+  smooth: 1
+  speed: 6
   player: {fileID: 0}
   stopDistance: 1
 --- !u!1 &4167452192864577573

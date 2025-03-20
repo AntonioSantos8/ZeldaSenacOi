@@ -71,7 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b40027dbb481a4e4194cbaa05e3515a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
+  damage: 10
   attackCooldown: 2
 --- !u!1 &6094686593638273756
 GameObject:
@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  smooth: 2
+  smooth: 1
   speed: 4
   player: {fileID: 0}
   stopDistance: 0
