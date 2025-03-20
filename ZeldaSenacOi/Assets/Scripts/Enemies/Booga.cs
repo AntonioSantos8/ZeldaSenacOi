@@ -6,11 +6,14 @@ public class Booga : EnemyStatus
 {
     public Transform player;
     private Vector3 velocity = Vector3.zero;
+  
     public float stopDistance = 10;
+    
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindWithTag("Player").transform;
+        
     }
 
     // Update is called once per frame
@@ -26,6 +29,7 @@ public class Booga : EnemyStatus
             Destroy(gameObject);
         }
     }
+    
     void FollowPlayer()
     {
         float distance = Vector3.Distance(transform.position, player.position);
@@ -39,4 +43,5 @@ public class Booga : EnemyStatus
             velocity = Vector3.zero;
         }
     }
+   
 }

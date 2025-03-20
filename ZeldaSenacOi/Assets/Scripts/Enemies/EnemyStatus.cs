@@ -7,6 +7,8 @@ public class EnemyStatus : MonoBehaviour
     public int life;
     public float smooth;
     public float speed;
+    public int damage;
+    public int attackCooldown = 2;
     // Start is called before the first frame update
     void Start()
     {

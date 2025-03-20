@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMove : PlayerStatus
 {
@@ -17,6 +18,10 @@ public class PlayerMove : PlayerStatus
     void Update()
     {
         Move();
+        if(life <= 0)
+        {
+            SceneManager.LoadScene("Testes");
+        }
     }
     private void FixedUpdate()
     {

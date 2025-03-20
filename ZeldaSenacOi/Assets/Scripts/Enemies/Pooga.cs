@@ -7,6 +7,7 @@ public class Pooga : EnemyStatus
     public Transform player;
     private Vector3 velocity = Vector3.zero;
     public float stopDistance = 10;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -39,4 +40,5 @@ public class Pooga : EnemyStatus
             velocity = Vector3.zero;
         }
     }
+    
 }
