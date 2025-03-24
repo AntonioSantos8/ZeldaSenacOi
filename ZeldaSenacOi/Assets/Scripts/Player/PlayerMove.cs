@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class PlayerMove : PlayerStatus
 {
     Rigidbody2D rb;
-    
     Vector2 move;
     // Start is called before the first frame update
     void Start()
@@ -18,10 +17,7 @@ public class PlayerMove : PlayerStatus
     void Update()
     {
         Move();
-        if(life <= 0)
-        {
-            SceneManager.LoadScene("Testes");
-        }
+        
     }
     private void FixedUpdate()
     {
