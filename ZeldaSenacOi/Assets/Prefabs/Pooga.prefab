@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 052afac838e47fd46ac6e969e1bec2b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 10
+  life: 3
   smooth: 1
   speed: 6
   player: {fileID: 0}
@@ -223,5 +223,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b40027dbb481a4e4194cbaa05e3515a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
+  damage: 1
   attackCooldown: 2

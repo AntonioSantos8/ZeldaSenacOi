@@ -42,7 +42,7 @@ public class SwordAttack : MonoBehaviour
     {
         foreach (EnemyStatus enemy in enemiesInRange)
         {
-            enemy.TakeDamage(10);
+            enemy.TakeDamage(3);
         }
     }
 }

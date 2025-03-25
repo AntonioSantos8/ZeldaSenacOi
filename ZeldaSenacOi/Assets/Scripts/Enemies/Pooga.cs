@@ -25,6 +25,7 @@ public class Pooga : EnemyStatus
         if (life <= 0)
         {
             Destroy(gameObject);
+            PlayerMoney.money += 10;
         }
     }
     void FollowPlayer()

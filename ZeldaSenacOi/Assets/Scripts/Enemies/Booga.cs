@@ -27,6 +27,7 @@ public class Booga : EnemyStatus
         if (life <= 0)
         {
             Destroy(gameObject);
+            PlayerMoney.money += 5;
         }
     }
     
