@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -127,7 +127,574 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Knight_Die_dir6_0
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1144
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 279920b7125762c4f902e577aacf08a7
+      internalID: 1868508314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_1
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 1144
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7ad057db8d7234390e3dbe8a490a0e
+      internalID: -444440215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_2
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 1143
+        width: 50
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a772639447d1dfa4f9a4740f4866dd04
+      internalID: -515107879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_3
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1141
+        width: 52
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8543611c5b50e34288266df31afe21a
+      internalID: 409165513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_4
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 1141
+        width: 52
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a30a8649deb5ab4f9509602fb9a11af
+      internalID: -840441122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_5
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 1141
+        width: 52
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a991ed880d0d881418462d7e4fefa4da
+      internalID: -521078613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_6
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 885
+        width: 52
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d835b529cc2bb44a891d4ed18f18b4d
+      internalID: 1699571010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_7
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 887
+        width: 51
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac33acf1bdb6cd4ea9560b8ab4dc84e
+      internalID: -282978773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_8
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 887
+        width: 51
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fbc7f98395042545bbcbd4dfaf0946d
+      internalID: -1526171383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_9
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 887
+        width: 48
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d63b9759aad7bc498b91e6c659f1d85
+      internalID: -103454433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_10
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 886
+        width: 45
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d271d0a6c7959b84e8c70dc1c0a08812
+      internalID: -988941121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_11
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 884
+        width: 44
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb3076f5fa22464fbffe62e7366302c
+      internalID: -1588223889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_12
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 627
+        width: 42
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d75b7ebb62b4564c9f18e38bf8008a3
+      internalID: -2138868686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_13
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 628
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b7ff7f0ea50cf0448dd63e97767b6ef
+      internalID: -1870225945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_14
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 628
+        width: 45
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92e351ce220a6149a2349720332c041
+      internalID: -782178710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_15
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 628
+        width: 50
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd9ae9d78043cd46908a3d4c84ca7de
+      internalID: -1290813059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_16
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 628
+        width: 52
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98dedb4447507e499120c37b3ce3294
+      internalID: 161236326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_17
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 628
+        width: 55
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68daab614b792b541935784b0a6139ed
+      internalID: -2045041305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_18
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 371
+        width: 58
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2fcec3607aa6a4687464f5f75cda3c
+      internalID: 725445497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_19
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 371
+        width: 62
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae21d45bffbb4d4e84a7701d192dd23
+      internalID: -374630906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_20
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 370
+        width: 67
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ebc54e8b0fdfa4b89789cef194a555
+      internalID: -1575924968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_21
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 366
+        width: 75
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a4dd0f25aac336429e6005de953e3f7
+      internalID: 1794809132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_22
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 356
+        width: 85
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4687cef34f323ff4e942b848519a6a64
+      internalID: -1595415053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_23
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 354
+        width: 85
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c298231894e5ece4f86bcce89cc185c2
+      internalID: 486017839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_24
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 99
+        width: 84
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d37dba8c71dd344bbfbdc42574009e
+      internalID: 1045791214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_25
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 99
+        width: 85
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa52761770966547a66b9904214129f
+      internalID: 1727697511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight_Die_dir6_26
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 99
+        width: 85
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac29014469280524a9d5468269a5a9bb
+      internalID: 1493943120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -138,7 +705,34 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Knight_Die_dir6_16: 161236326
+      Knight_Die_dir6_20: -1575924968
+      Knight_Die_dir6_25: 1727697511
+      Knight_Die_dir6_26: 1493943120
+      Knight_Die_dir6_17: -2045041305
+      Knight_Die_dir6_0: 1868508314
+      Knight_Die_dir6_22: -1595415053
+      Knight_Die_dir6_13: -1870225945
+      Knight_Die_dir6_12: -2138868686
+      Knight_Die_dir6_6: 1699571010
+      Knight_Die_dir6_1: -444440215
+      Knight_Die_dir6_18: 725445497
+      Knight_Die_dir6_11: -1588223889
+      Knight_Die_dir6_15: -1290813059
+      Knight_Die_dir6_24: 1045791214
+      Knight_Die_dir6_2: -515107879
+      Knight_Die_dir6_21: 1794809132
+      Knight_Die_dir6_23: 486017839
+      Knight_Die_dir6_3: 409165513
+      Knight_Die_dir6_4: -840441122
+      Knight_Die_dir6_10: -988941121
+      Knight_Die_dir6_9: -103454433
+      Knight_Die_dir6_8: -1526171383
+      Knight_Die_dir6_19: -374630906
+      Knight_Die_dir6_5: -521078613
+      Knight_Die_dir6_7: -282978773
+      Knight_Die_dir6_14: -782178710
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
