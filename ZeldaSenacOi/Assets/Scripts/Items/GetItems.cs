@@ -11,6 +11,7 @@ public class GetItems : MonoBehaviour
     void Update()
     {
         GetItem();
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

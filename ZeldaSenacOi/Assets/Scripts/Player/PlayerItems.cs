@@ -25,9 +25,8 @@ public class PlayerItems : MonoBehaviour
         if(actualItem != null)
         actualItem.transform.position = gameObject.transform.position + new Vector3(2, 0, 0);
 
-
     }
-    void ChangeItem()
+    public void ChangeItem()
     {
         if(actualItem && actualItemIMG != null)
         {
