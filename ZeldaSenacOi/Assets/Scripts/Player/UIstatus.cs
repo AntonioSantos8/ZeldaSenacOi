@@ -19,12 +19,23 @@ public class UIstatus : MonoBehaviour
     void Update()
     {
         money.text = "Money: " + PlayerMoney.money.ToString();
-        if(status.life == 2)
-        hearts[0].color = Color.grey;
-        if(status.life == 1)
+        HeartsVerify();
+    }
+    void HeartsVerify()
+    {
+        if (status.life == 2)
+            hearts[0].color = Color.grey;
+
+        if (status.life == 1)
         {
             hearts[0].color = Color.grey;
             hearts[1].color = Color.grey;
+        }
+        if (status.life == 3)
+        {
+            hearts[0].color = Color.red;
+            hearts[1].color = Color.red;
+            hearts[2].color = Color.red;
         }
     }
 }
