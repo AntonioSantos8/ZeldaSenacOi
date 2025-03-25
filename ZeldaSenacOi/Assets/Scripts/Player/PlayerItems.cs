@@ -23,7 +23,7 @@ public class PlayerItems : MonoBehaviour
             ChangeItem();
         }
         if(actualItem != null)
-        actualItem.transform.position = gameObject.transform.position + new Vector3(2, 0, 0);
+            Flip();
 
     }
     public void ChangeItem()
@@ -43,6 +43,19 @@ public class PlayerItems : MonoBehaviour
         actualItemIMG = Items.itensIMG[currentInt];
         actualItem.SetActive(true);
         actualItemIMG.SetActive(true);
+    }
+    void Flip()
+    {
+        float moveX = Input.GetAxisRaw("Horizontal");
+
+        if (moveX > 0) 
+        {
+            actualItem.transform.position = gameObject.transform.position + new Vector3(2, 0, 0);
+        }
+        else if (moveX < 0) 
+        {
+            actualItem.transform.position = gameObject.transform.position + new Vector3(-2, 0, 0);
+        }
     }
 }
 
