@@ -32,11 +32,7 @@ public class PlayerMove : PlayerStatus
         move.Normalize();
         anim.SetFloat("MoveX", move.x);
         anim.SetFloat("MoveY", move.y);
-        if (move != Vector2.zero)
-        {
-            anim.SetFloat("LastMoveX", move.x);
-            anim.SetFloat("LastMoveY", move.y);
-        }
+        
     }
    
 }
