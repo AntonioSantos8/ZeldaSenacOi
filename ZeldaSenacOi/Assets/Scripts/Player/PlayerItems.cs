@@ -7,6 +7,7 @@ public class PlayerItems : MonoBehaviour
     public GameObject actualItem;
     public GameObject actualItemIMG;
     int currentInt;
+    private float lastMoveX = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,8 +23,7 @@ public class PlayerItems : MonoBehaviour
         {
             ChangeItem();
         }
-        if(actualItem != null)
-            actualItem.transform.position = gameObject.transform.position + new Vector3(2, 0, 0);
+        Flip();
 
     }
     public void ChangeItem()
@@ -43,6 +43,19 @@ public class PlayerItems : MonoBehaviour
         actualItemIMG = Items.itensIMG[currentInt];
         actualItem.SetActive(true);
         actualItemIMG.SetActive(true);
+    }
+    void Flip()
+    {
+        float moveX = Input.GetAxisRaw("Horizontal");
+        float moveY = Input.GetAxisRaw("Vertical");
+
+        if (moveX != 0)
+            lastMoveX = moveX;
+
+        if (moveY == 0) 
+            actualItem.transform.position = gameObject.transform.position + new Vector3(2 * lastMoveX, 0, 0);
+        else 
+            actualItem.transform.position = gameObject.transform.position + new Vector3(0, 2 * Mathf.Sign(moveY), 0);
     }
     
 }

@@ -5,12 +5,13 @@ using UnityEngine;
 public class SwordAttack : MonoBehaviour
 {
     List<EnemyStatus> enemiesInRange = new List<EnemyStatus>();
-
+    public Animator animator;
     void Update()
     {
         if (Input.GetMouseButtonDown(0) && enemiesInRange.Count > 0)
         {
             Attack();
+            animator.SetTrigger("Attack");
         }
     }
 
