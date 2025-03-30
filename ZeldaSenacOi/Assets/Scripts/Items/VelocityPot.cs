@@ -37,6 +37,6 @@ public class VelocityPot : MonoBehaviour
         Items.itens.Remove(objetoParaRemove);
         Items.itensIMG.Remove(IMGParaRemove);
         yield return new WaitForSeconds(5);
-        status.moveSpeed = 10;
+        status.moveSpeed /= 2;
     }
 }
