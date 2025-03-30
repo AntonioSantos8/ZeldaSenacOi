@@ -7,11 +7,12 @@ public class Pooga : EnemyStatus
     public Transform player;
     private Vector3 velocity = Vector3.zero;
     public float stopDistance = 10;
-    
+    [SerializeField] GameObject particle;
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindWithTag("Player").transform;
+        
     }
 
     // Update is called once per frame
@@ -24,6 +25,7 @@ public class Pooga : EnemyStatus
     {
         if (life <= 0)
         {
+            Instantiate(particle, transform.position, Quaternion.identity);
             Destroy(gameObject);
             PlayerMoney.money += 10;
         }

@@ -15,6 +15,7 @@ public class Revive : MonoBehaviour
     float timeToRevive = 3f;
     bool isReviving = false;
     bool podeChamar;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +38,7 @@ public class Revive : MonoBehaviour
     }
     IEnumerator Reviver()
     {
-
+       
         if (!podeChamar) yield break;
         playerBody.transform.position = spawnPoint.transform.position;
         playerBody.SetActive(false);
@@ -45,7 +46,7 @@ public class Revive : MonoBehaviour
         float tempoAtual = timeToRevive;
         while (tempoAtual > 0)
         {
-            texto.text = tempoAtual.ToString();
+            texto.text = "VOCE MORREU, renascendo em: " + tempoAtual.ToString();
             yield return new WaitForSeconds(1);
             tempoAtual--;
         }

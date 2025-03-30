@@ -7,11 +7,19 @@ public class GetItems : MonoBehaviour
     bool isTouchingPlayer;
     public GameObject item;
     public GameObject itemIMG;
+    public GameObject itemSobrePos;
     // Start is called before the first frame update
     void Update()
     {
         GetItem();
-        
+        if (isTouchingPlayer)
+        {
+            itemSobrePos.SetActive(true);
+        }
+        if (!isTouchingPlayer)
+        {
+            itemSobrePos.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

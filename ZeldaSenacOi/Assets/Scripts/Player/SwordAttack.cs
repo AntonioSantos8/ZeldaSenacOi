@@ -1,17 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SwordAttack : MonoBehaviour
 {
     List<EnemyStatus> enemiesInRange = new List<EnemyStatus>();
-    public Animator animator;
+    public bool canAttack;
+    [SerializeField]int damage;
+    [SerializeField] int coodown;
+    private void Start()
+    {
+        canAttack = true;
+    }
+
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && enemiesInRange.Count > 0)
+        if (canAttack && Input.GetMouseButtonDown(0))
         {
             Attack();
-            animator.SetTrigger("Attack");
         }
     }
 
@@ -41,9 +48,24 @@ public class SwordAttack : MonoBehaviour
 
     void Attack()
     {
+        SwordAim swordAim = FindObjectOfType<SwordAim>();
+        if (swordAim != null)
+        {
+            swordAim.AnimationSword(); 
+        }
+
+        StartCoroutine(CooldownSword());
+
         foreach (EnemyStatus enemy in enemiesInRange)
         {
-            enemy.TakeDamage(3);
+            enemy.TakeDamage(damage);
         }
+    }
+
+    IEnumerator CooldownSword()
+    {
+        canAttack = false;
+        yield return new WaitForSeconds(coodown);
+        canAttack = true;
     }
 }
