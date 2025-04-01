@@ -6,7 +6,8 @@ public class Booga : EnemyStatus
 {
     public Transform player;
     private Vector3 velocity = Vector3.zero;
-   
+    Vector2 move;
+    private Animator anim;
     public float stopDistance = 10;
     [SerializeField] GameObject particle;
     // Start is called before the first frame update
@@ -34,8 +35,10 @@ public class Booga : EnemyStatus
     
     void FollowPlayer()
     {
+        move.x = Input.GetAxisRaw("Horizontal");
         float distance = Vector3.Distance(transform.position, player.position);
-
+        anim.SetFloat("MoveX", move.x);
+        
         if (distance > stopDistance) 
         {
             transform.position = Vector3.SmoothDamp(transform.position, player.position, ref velocity, smooth, speed);

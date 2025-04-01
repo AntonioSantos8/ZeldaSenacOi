@@ -59,6 +59,9 @@ public class SwordAttack : MonoBehaviour
         foreach (EnemyStatus enemy in enemiesInRange)
         {
             enemy.TakeDamage(damage);
+
+            Vector2 knockbackDirection = (enemy.transform.position - transform.position).normalized;
+            enemy.TakeHit(knockbackDirection);
         }
     }
 
