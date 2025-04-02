@@ -38,7 +38,7 @@ public class GetItems : MonoBehaviour
     }
     void GetItem()
     {
-        if (isTouchingPlayer && Input.GetKeyDown(KeyCode.Q))
+        if (isTouchingPlayer && Input.GetKeyDown(KeyCode.R))
         {
             Items.itens.Add(item);
             Items.itensIMG.Add(itemIMG);
