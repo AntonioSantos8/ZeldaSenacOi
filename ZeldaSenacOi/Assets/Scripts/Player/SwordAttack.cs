@@ -60,8 +60,7 @@ public class SwordAttack : MonoBehaviour
         {
             enemy.TakeDamage(damage);
 
-            Vector2 knockbackDirection = (enemy.transform.position - transform.position).normalized;
-            enemy.TakeHit(knockbackDirection);
+            
         }
     }
 

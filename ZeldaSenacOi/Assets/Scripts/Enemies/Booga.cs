@@ -4,24 +4,24 @@ using UnityEngine;
 
 public class Booga : EnemyStatus
 {
-    public Transform player;
-    private Vector3 velocity = Vector3.zero;
+   
+  
     Vector2 move;
     private Animator anim;
-    public float stopDistance = 10;
+    
     [SerializeField] GameObject particle;
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindWithTag("Player").transform;
-       
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         Die();
-        FollowPlayer();
+     
+        Animationn();
     }
     void Die()
     {
@@ -32,21 +32,11 @@ public class Booga : EnemyStatus
             PlayerMoney.money += 5;
         }
     }
-    
-    void FollowPlayer()
+    void Animationn()
     {
+        anim.SetFloat("Move", move.x);
         move.x = Input.GetAxisRaw("Horizontal");
-        float distance = Vector3.Distance(transform.position, player.position);
-        anim.SetFloat("MoveX", move.x);
-        
-        if (distance > stopDistance) 
-        {
-            transform.position = Vector3.SmoothDamp(transform.position, player.position, ref velocity, smooth, speed);
-        }
-        else
-        {
-            velocity = Vector3.zero;
-        }
     }
+   
    
 }
