@@ -51,16 +51,17 @@ public class SwordAttack : MonoBehaviour
         SwordAim swordAim = FindObjectOfType<SwordAim>();
         if (swordAim != null)
         {
-            swordAim.AnimationSword(); 
+            swordAim.AnimationSword();
+            StartCoroutine(CooldownSword());
         }
 
-        StartCoroutine(CooldownSword());
+        
 
         foreach (EnemyStatus enemy in enemiesInRange)
         {
             enemy.TakeDamage(damage);
+            StartCoroutine(CooldownSword());
 
-            
         }
     }
 

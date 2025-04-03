@@ -24,12 +24,17 @@ public class UIstatus : MonoBehaviour
     void HeartsVerify()
     {
         if (status.life == 2)
+        {
             hearts[0].color = Color.grey;
-
+            hearts[1].color = Color.red;
+            hearts[2].color = Color.red;
+        }
+          
         if (status.life == 1)
         {
             hearts[0].color = Color.grey;
             hearts[1].color = Color.grey;
+            hearts[2].color = Color.red;
         }
         if (status.life == 3)
         {
