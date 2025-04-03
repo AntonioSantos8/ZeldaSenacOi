@@ -21,7 +21,7 @@ public class Teletransporte : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            player.GetComponent<Rigidbody2D>().MovePosition(lugarQteletransporta.position);
+            player.transform.position = lugarQteletransporta.position;
         }
     }
 }
