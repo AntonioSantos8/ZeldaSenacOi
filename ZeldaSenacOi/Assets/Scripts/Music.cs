@@ -5,6 +5,7 @@ using UnityEngine;
 public class Music : MonoBehaviour
 {
     private static Music instance;
+    private AudioSource audioSource;
 
     void Awake()
     {
@@ -12,10 +13,20 @@ public class Music : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
+            audioSource = GetComponent<AudioSource>(); 
         }
         else
         {
-            Destroy(gameObject); 
+            Destroy(gameObject);
+        }
+    }
+
+    public void ChangeMusic(AudioClip newMusic)
+    {
+        if (audioSource.clip != newMusic) 
+        {
+            audioSource.clip = newMusic;
+            audioSource.Play();
         }
     }
 }
