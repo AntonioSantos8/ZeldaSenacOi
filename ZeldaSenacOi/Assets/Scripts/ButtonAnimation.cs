@@ -8,8 +8,8 @@ public class ButtonAnimation : MonoBehaviour
     public float tiltSpeed = 2f; // Velocidade da animação
     public float scaleAmount = 1.2f; // Tamanho quando o mouse estiver em cima
 
-    private bool isHovered = false;
     private Vector3 originalScale;
+    private bool isHovered = false;
 
     void Start()
     {
@@ -21,23 +21,20 @@ public class ButtonAnimation : MonoBehaviour
 
     void Update()
     {
-        if (!isHovered)
+        // Detecta se o mouse está sobre o botão
+        Vector2 mousePosition = Input.mousePosition;
+        isHovered = RectTransformUtility.RectangleContainsScreenPoint(button, mousePosition);
+
+        if (isHovered)
+        {
+            button.rotation = Quaternion.identity; // Para a rotação
+            button.localScale = originalScale * scaleAmount; // Aumenta o tamanho
+        }
+        else
         {
             float angle = Mathf.Sin(Time.time * tiltSpeed) * tiltAmount;
             button.rotation = Quaternion.Euler(0, 0, angle);
+            button.localScale = originalScale; // Volta ao tamanho normal
         }
-    }
-
-    public void OnPointerEnter()
-    {
-        isHovered = true;
-        button.rotation = Quaternion.identity; // Reseta a rotação
-        button.localScale = originalScale * scaleAmount; // Aumenta o tamanho
-    }
-
-    public void OnPointerExit()
-    {
-        isHovered = false;
-        button.localScale = originalScale; // Volta ao tamanho normal
     }
 }
