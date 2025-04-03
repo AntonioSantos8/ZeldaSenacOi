@@ -42,6 +42,7 @@ public class SwordAttack : MonoBehaviour
             if (enemy != null)
             {
                 enemiesInRange.Remove(enemy);
+
             }
         }
     }

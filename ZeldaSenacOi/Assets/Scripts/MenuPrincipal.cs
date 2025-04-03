@@ -12,7 +12,12 @@ public class MenuPrincipal : MonoBehaviour
     }
     public void StartGame()
     {
-        SceneManager.LoadScene("JogoMapa");
+        SceneManager.LoadScene("Jogo Mapa");
+    }
+    public void ExitGame()
+    {
+        Application.Quit();
+        Debug.Log("Sai");
     }
     // Update is called once per frame
     void Update()

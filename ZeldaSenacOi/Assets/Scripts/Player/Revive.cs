@@ -15,10 +15,11 @@ public class Revive : MonoBehaviour
     float timeToRevive = 3f;
     bool isReviving = false;
     bool podeChamar;
-   
+    SwordAttack sword;
     // Start is called before the first frame update
     void Start()
     {
+        sword = FindObjectOfType<SwordAttack>();
         podeChamar = true;
         playerMove = FindObjectOfType<PlayerMove>();
         lifeValue = playerMove.life;
@@ -38,7 +39,7 @@ public class Revive : MonoBehaviour
     }
     IEnumerator Reviver()
     {
-       
+        sword.canAttack = true;
         if (!podeChamar) yield break;
         playerBody.transform.position = spawnPoint.transform.position;
         playerBody.SetActive(false);
