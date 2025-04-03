@@ -8,9 +8,11 @@ public class PlayerItems : MonoBehaviour
     public GameObject actualItemIMG;
     int currentInt;
     private float lastMoveX = 1;
+    SwordAttack sword;
     // Start is called before the first frame update
     void Start()
     {
+        sword = FindObjectOfType<SwordAttack>();    
         actualItem = Items.itens[0];
         currentInt = 0;
         actualItemIMG = Items.itensIMG[0];
@@ -30,6 +32,7 @@ public class PlayerItems : MonoBehaviour
     {
         if(actualItem && actualItemIMG != null)
         {
+            sword.canAttack = true;
             actualItem.SetActive(false);
             actualItemIMG.SetActive(false);
         }
