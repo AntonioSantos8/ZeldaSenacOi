@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1890567824}
-  tiltAmount: 10
-  tiltSpeed: 2
+  tiltAmount: 1
+  tiltSpeed: 6
   scaleAmount: 1.2
 --- !u!4 &4723469
 Transform:
@@ -538,9 +538,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 698965184}
-        m_TargetAssemblyTypeName: ButtonAnimation, Assembly-CSharp
-        m_MethodName: OnPointerEnter
+      - m_Target: {fileID: 2077055918}
+        m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -888,8 +888,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 322602006}
-  tiltAmount: 10
-  tiltSpeed: 2
+  tiltAmount: 1
+  tiltSpeed: 6
   scaleAmount: 1.2
 --- !u!4 &698965185
 Transform:
@@ -1307,8 +1307,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1561949886}
-  tiltAmount: 10
-  tiltSpeed: 2
+  tiltAmount: 1
+  tiltSpeed: 6
   scaleAmount: 1.2
 --- !u!4 &1301032598
 Transform:
