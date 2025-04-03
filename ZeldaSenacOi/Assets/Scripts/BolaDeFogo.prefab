@@ -208,9 +208,33 @@ PrefabInstance:
       value: ParticleFireBall
       objectReference: {fileID: 0}
     - target: {fileID: 7897680471458926505, guid: 5dfda8ac2ddd5a94fba48e271b1f4fb9, type: 3}
+      propertyPath: UVModule.mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897680471458926505, guid: 5dfda8ac2ddd5a94fba48e271b1f4fb9, type: 3}
+      propertyPath: UVModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897680471458926505, guid: 5dfda8ac2ddd5a94fba48e271b1f4fb9, type: 3}
       propertyPath: startDelay.scalar
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7897680471458926505, guid: 5dfda8ac2ddd5a94fba48e271b1f4fb9, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897680471458926505, guid: 5dfda8ac2ddd5a94fba48e271b1f4fb9, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897680471458926505, guid: 5dfda8ac2ddd5a94fba48e271b1f4fb9, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897680471458926505, guid: 5dfda8ac2ddd5a94fba48e271b1f4fb9, type: 3}
+      propertyPath: UVModule.sprites.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
     - target: {fileID: 7897680471458926505, guid: 5dfda8ac2ddd5a94fba48e271b1f4fb9, type: 3}
       propertyPath: ColorModule.gradient.maxGradient.key0.b
       value: 0

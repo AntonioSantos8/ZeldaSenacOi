@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuPrincipal : MonoBehaviour
 {
+    public GameObject creditosPanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,14 @@ public class MenuPrincipal : MonoBehaviour
     {
         Application.Quit();
         Debug.Log("Sai");
+    }
+    public void CreditosAbre()
+    {
+        creditosPanel.SetActive(true);
+    }
+    public void CreditosFecha()
+    {
+        creditosPanel.SetActive(false);
     }
     // Update is called once per frame
     void Update()

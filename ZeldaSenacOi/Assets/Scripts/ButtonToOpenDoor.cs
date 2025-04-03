@@ -6,6 +6,7 @@ public class ButtonToOpenDoor : MonoBehaviour
 {
     bool canInteract;
     public GameObject doorToOpen;
+    public GameObject itemSobrePos;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,14 @@ public class ButtonToOpenDoor : MonoBehaviour
         {
             Destroy(doorToOpen);
             Destroy(gameObject);
+        }
+        if (canInteract)
+        {
+            itemSobrePos.SetActive(true);
+        }
+        if (!canInteract)
+        {
+            itemSobrePos.SetActive(false);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

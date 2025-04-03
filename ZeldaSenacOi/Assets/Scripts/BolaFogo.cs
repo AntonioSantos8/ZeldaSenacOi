@@ -6,7 +6,7 @@ public class BolaFogo : MonoBehaviour
 {
     public float speed = 10f;
     public int damage = 20;
-    public float lifetime = 3f;
+    public float lifetime = 5f;
     private Vector3 moveDirection;
     public Animator anim;
     public void SetDirection(Vector3 direction)
@@ -16,7 +16,7 @@ public class BolaFogo : MonoBehaviour
     private void Start()
     {
         anim.SetTrigger("Joguei");
-
+        StartCoroutine(Destruir());
     }
     void Update()
     {
@@ -37,11 +37,12 @@ public class BolaFogo : MonoBehaviour
     }
     IEnumerator Destruir()
     {
-        while (lifetime >= 5)
+        while (lifetime >= 0)
         {
 
             yield return new WaitForSeconds(1);
-            
+            lifetime--;
         }
+        Destroy(gameObject);
     }
 }
